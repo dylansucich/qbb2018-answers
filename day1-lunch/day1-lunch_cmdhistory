@@ -1,0 +1,500 @@
+   40  mate
+   41  which mate
+   42  clear
+   43  hisat2
+   44  stringtie
+   45  cd ~
+   46  clear
+   47  ls /Volumes/
+   48  ls
+   49  ls /Volumes/Install\ macOS\ High\ Sierra/
+   50  cp -av /Volumes/Install\ macOS\ High\ Sierra/data/ .
+   51  ls
+   52  ls data/
+   53  ls genomes/
+   54  rm -rf data/ genomes/
+   55  mkdir data
+   56  cd data/
+   57  cp -av /Volumes/Install\ macOS\ High\ Sierra/data/ .
+   58  ls -al
+   59  find .
+   60  cd rs
+   61  cd results/
+   62  ls
+   63  tar -tvzf stringtie/
+   64  tar -tvzf SRP004442.stringtie.tar.gz 
+   65  rm -rf stringtie/
+   66  clear
+   67  ls
+   68  ls -al
+   69  chmod -w SRP004442.stringtie.tar.gz 
+   70  cd ..
+   71  ls
+   72  ls genomes/
+   73  cd genomes/
+   74  chmod -r BDGP6.Ensembl.81.gtf BDGP6.fa 
+   75  ls -al
+   76  chmod +r BDGP6.Ensembl.81.gtf BDGP6.fa 
+   77  chmod -w BDGP6.Ensembl.81.gtf BDGP6.fa 
+   78  ls -al
+   79  cd ..
+   80  ls
+   81  ls results/
+   82  cd rawdata/
+   83  ls
+   84  chmod -w *.fastq
+   85  ls -al
+   86  cd ~
+   87  ls -al
+   88  python
+   89  conda upgrade
+   90  conda update
+   91  conda upgrade pandas 
+   92  python
+   93  python
+   94  conda update --all
+   95  python
+   96  python
+   97  open tmp.pdf 
+   98  cd ~/.local
+   99  ls
+  100  pytho
+  101  python
+  102  mkdir -p .local/lib/python3.6/site-packages
+  103  python
+  104  cd .local/lib/python3.6/site-packages/
+  105  ls
+  106  vim usercustomize.py
+  107  python
+  108  conda install pytest
+  109  clear
+  110  python
+  111  conda install -c conda-forge pytest
+  112  conda info pytest
+  113  conda update
+  114  conda install py
+  115  conda install pytorch
+  116  conda install cython
+  117  conda install scipy
+  118  conda info
+  119  conda install openblas
+  120  conda remove mkl
+  121  conda uninstall mkl install blas openblas numpy scipy scikit-learn
+  122  conda info
+  123  conda features
+  124  conda remove --features mkl
+  125  conda uninstall mkl install blas openblas numpy scipy scikit-learn
+  126  conda install -c conda-forge blas openblas numpy scipy scikit-learn pytest
+  127  conda install nomkl
+  128  conda update 
+  129  conda update numpy
+  130  python
+  131  clear
+  132  cd ~
+  133  clear
+  134  ls -al
+  135  ls ncbi/
+  136  rm -rf ncbi/
+  137  rm tmp.pdf 
+  138  clear
+  139  ls -al
+  140  pwd
+  141  passwd
+  142  passwd
+  143  date
+  144  sleep 60
+  145  if 
+  146  ls
+  147  man ls
+  148  ls -a
+  149  vi .bash_profile
+  150  ls tmp/
+  151  ls data/rawdata/
+  152  ls data/rawdata/
+  153  ls data/rawdata/*
+  154  ls data/rawdata/*90
+  155  ls data/rawdata/90*
+  156  ls data/rawdata/*90*
+  157  ls data/rawdata/
+  158  cd data/
+  159  ls rawdata/
+  160  cd rawdata/
+  161  ls
+  162  ls .
+  163  ls ..
+  164  cd ~
+  165  mkdir practice
+  166  ls
+  167  ls data/rawdata
+  168  ls data
+  169  cp /data/genomes ~/practice
+  170  cp /data/rawdata/genomes ~/practice
+  171  cp /data/genomes ~/practice
+  172  cp -r /data/genomes ~/practice
+  173  cp -r /data/genomes/* ~/practice
+  174  cd genomes
+  175  ls
+  176  nano .bash_profile 
+  177  source .bash_profile 
+  178  cp data/genomes/* practice 
+  179  ls -l practice
+  180  nano .bash_profile 
+  181  pwd
+  182  ls
+  183  cd practice
+  184  ls -l
+  185  wc BDGP6.Ensembl.81.gtf 
+  186  man wc
+  187  man wc
+  188  head BDGP6.Ensembl.81.gtf 
+  189  less -S BDG6P.Ensembl.81.gtf
+  190  ls -l
+  191  less -S BDG6P.en
+  192  less -S BDGP6.Ensembl.81.gtf
+  193  grep "fzo" BDG6P.Ensembl.81.gtf
+  194  grep "fzo" BDGP6.Ensembl.81.gtf
+  195  ls
+  196  grep "fzo" BDGP6.Ensembl.81.gtf > fzo.gtf
+  197  ls -l
+  198  wc fzo.gtf
+  199  less -S fzo.gtf
+  200  cut -f 3 fzo.gtf 
+  201  less -S fzo.gtf
+  202  grep "fzo" BDGP6.Ensembl.81.gtf | cut -f 3 
+  203  grep "fzo" BDGP6.Ensembl.81.gtf | cut -f 3 > fzo3.gtf
+  204  head fzo3.gtf
+  205  ls
+  206  grep "Fis1" BDGP6.Ensembl.81.gtf | cut -d " " -f 6
+  207  grep "Fis1" BDGP6.Ensembl.81.gtf | cut -d " " -f 6 > Fis1_transcript_id.gtf
+  208  ls
+  209  head Fis1_transcript_id.gtf 
+  210  history
+  211  grep "Fis1" BDGP6.Ensembl.81.gtf | cut -d " " -f 6 | uniq > Fis1_transcript_id_uniq.gtf
+  212  head Fis1_transcript_id_uniq.gtf
+  213  head Fis1_transcript_id.gtf
+  214  mv Fis1_transcript_id.gtf fis_transcripts.gtf
+  215  head fis_transcripts.gtf 
+  216  uniq fis_transcripts.gtf 
+  217  head Fis1_transcript_id_uniq.gtf 
+  218  mv Fis1_transcript_id_uniq.gtf fis_transcript_uniq.gtf
+  219  wc fis_transcript_id.gtf
+  220  wc fis_transcripts.gtf 
+  221  grep "PGRP" BDGP6.| grep -w "gene" > PGRP.gtf
+  222  grep "PGRP" BDGP6.Ensembl.81.gtf | grep -w "gene" > PGRP.gtf
+  223  wc PGRP.gtf 
+  224  cut -f 1 PGRP.gtf | sort | uniq -c
+  225  conda install datamash
+  226  which datamash
+  227  datamash -s -g 1 count 1 < PGRP.gtf
+  228  git config --global user.name "Dylan Sucich"
+  229  git config --global user.name "dylansucich"
+  230  git config --global user.email "dgsucich@gmail.com"
+  231  git config --global core.editor "nano -w"
+  232  man nano
+  233  cd
+  234  git clone https://github.com/dylansucich/qbb2018-answers.git
+  235  git clone https://github.com/dylansucich/qbb208-answers.git
+  236  ls
+  237  rm qbb208-answers
+  238  rm -R qbb208-answers
+  239  ls
+  240  git clone https://github.com/dylansucich/qbb2018-answers.git
+  241  ls
+  242  ls
+  243  cd qbb2018-answers/
+  244  mkdir day1-morning
+  245  cp ~/practice/fzo.gtf day1-morning/
+  246  ls
+  247  cd day1-morning/
+  248  ls
+  249  head fzo.gtf
+  250  ls -alh
+  251  ls -alt
+  252  git status
+  253  cd
+  254  git status
+  255  cd qbb2018-answers/
+  256  git status
+  257  git add day1-morning/fzo.gtf 
+  258  git status
+  259  git commit 
+  260  git status
+  261  git push
+  262  git status
+  263  cp /Users/cmdb/data/genomes/*
+  264  cp /Users/cmdb/data/genomes/ .
+  265  cp /Users/cmdb/data/genomes/* .
+  266  ls
+  267  mkdir genomes
+  268  mv BD* genomes
+  269  ls
+  270  ls genomes
+  271  ls
+  272  ls day1-morning/
+  273  ls /Users/cmdb/data/genomes/
+  274  ls /Users/cmdb/practice 
+  275  cp /Users/cmdb/practice/fis_transcripts.gtf ./day1-morning/
+  276  ls
+  277  ls day1-morning/
+  278  mkdir rawdata
+  279  mkdir results
+  280  cp /Users/cmdb/rawdata/SRR072893.fastq ./rawdata
+  281  ls rawdata
+  282  cp /Users/cmdb/data/results/SRP004442.stringtie.tar.gz ./results
+  283  mkdir day1-lunch
+  284  ls -lR ~/qbb2018-answers 
+  285  ls
+  286  ls -lR ~/qbb2018-answers > ./day1-lunch/directory_contents.txt
+  287  ls
+  288  head day1-lunch/directory_contents.txt 
+  289  ls 
+  290  git status
+  291  git commit
+  292  cd day1-lunch
+  293  git add
+  294  git add directory_contents.txt 
+  295  git commit 
+  296  git push
+  297  man awk
+  298  cd ..
+  299  cd genomes/
+  300  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5}' BDGP6.Ensembl.81.gtf | grep -v ^211 | head
+  301  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $6 "\t" $7}' BDGP6.Ensembl.81.gtf | grep -v ^211 | head
+  302  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $6 "\t" $7}' BDGP6.Ensembl.81.gtf | grep -v ^211 | head
+  303  less -S BDGP6.Ensembl.81.gtf 
+  304  less -S BDGP6.Ensembl.81.gtf 
+  305  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14 "\t" $5}' BDGP6.Ensembl.81.gtf | grep -v ^211 | head
+  306  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14 "\t" $15}' BDGP6.Ensembl.81.gtf | grep -v ^211 | head
+  307  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14}' BDGP6.Ensembl.81.gtf | grep -v ^211 | head
+  308  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14 "\t" $5-$4}' BDGP6.Ensembl.81.gtf | grep -v ^211 | head
+  309  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14 "\t" $5-$4}' BDGP6.Ensembl.81.gtf | grep -v ^211 | head > BDGP6.Ensembl.81.gene.bed
+  310  head BDGP6.Ensembl.81.gene.bed
+  311  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14 "\t" $5-$4+1}' BDGP6.Ensembl.81.gtf | grep -v ^211 | head > BDGP6.Ensembl.81.gene.bed
+  312  head BDGP6.Ensembl.81.gene.bed
+  313  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14 "\t" $5-$4+1}' BDGP6.Ensembl.81.gtf | grep -v ^211  > BDGP6.Ensembl.81.gene.bed
+  314  head BDGP6.Ensembl.81.gene.bed
+  315  wc BDGP6.Ensembl.81.gene.bed
+  316  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14 "\t" $5-$4+1}' BDGP6.Ensembl.81.gtf | grep -v ^211  | head -n > BDGP6.Ensembl.81.gene.bed
+  317  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14 "\t" $5-$4+1}' BDGP6.Ensembl.81.gtf | grep -v ^211  | head -n 20 > BDGP6.Ensembl.81.gene.bed
+  318  wc -l BDGP6.Ensembl.81.gene.bed 
+  319  cp BDGP6.Ensembl.81.gene.bed ../day1-lunch/first_10_genes.bed
+  320  cd ..
+  321  ls
+  322  cd day1-lunch/
+  323  ls
+  324  git add first_10_genes.bed 
+  325  git commit
+  326  git push
+  327  cut 
+  328  sort [first_10_genes.bed]
+  329  sort first_10_genes.bed 
+  330  cd ..
+  331  ls
+  332  cd genomes
+  333  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14 "\t" $5-$4+1}' BDGP6.Ensembl.81.gtf | grep -v ^211  > BDGP6.Ensembl.81.geneGiant.bed
+  334  sort BDGP6.Ensembl.81.geneGiant.bed | uniq | cut -f 1 > test 
+  335  head test
+  336* 
+  337  wc -l test 
+  338  less -S test
+  339  awk '$3 == "gene" {print $1 "\t" $4 "\t" $5 "\t" $14 "\t" $5-$4+1}' BDGP6.Ensembl.81.gtf | grep -v ^211  > BDGP6.Ensembl.81.gene.bed
+  340* sort BDGP6.Ensembl.81.gene.bed | uniq |cut -f 
+  341  grep "2L" BDGP6.Ensembl.81.gene.bed | sort | uniq | wc -l 
+  342  head test
+  343  man sort
+  344  man uniq
+  345  cut -f 1 BDGP6.Ensembl.81.gene.bed | sort | uniq -c
+  346  man uniq
+  347  cut -f 1 BDGP6.Ensembl.81.gene.bed | sort | uniq -c > ../day1-lunch/genes_per_chromosome.cutsortuniq
+  348  cd ..
+  349  /day1-lunch
+  350  ls
+  351  cd day1-lunch
+  352  ls
+  353  git add genes_per_chromosome.cutsortuniq 
+  354  git commit
+  355  git push
+  356  man datamash
+  357  man datamash
+  358  datamash - s count 1 
+  359  cd ../genomes 
+  360   datamash -s count 1
+  361   datamash -s count 1 BDGP6.Ensembl.81.gene.bed
+  362   datamash -s count 1 < BDGP6.Ensembl.81.gene.bed
+  363   datamash -s -6 1 count 1  BDGP6.Ensembl.81.gene.bed
+  364   datamash -s -g 1 count 1  BDGP6.Ensembl.81.gene.bed
+  365   datamash -s -g 1 count 1  < BDGP6.Ensembl.81.genedatamash.bed
+  366   datamash -s -g 1 count 1  < BDGP6.Ensembl.81.genedatamash.bed
+  367   datamash -s -g 1 count 1  < BDGP6.Ensembl.81.gene.bed
+  368   datamash -s -g 1 count 1  < BDGP6.Ensembl.81.gene.bed > genes_per_chromosome.datamash
+  369  head genes_per_chromosome.datamash 
+  370  cp genes_per_chromosome.datamash ../day1-lunch
+  371  cd ..
+  372  cd /day1-lunch
+  373  cd day1-lunch
+  374  ls
+  375  git add genes_per_chromosome.datamash 
+  376  git commit
+  377  git push
+  378  man datamash
+  379  cd ../
+  380  cd genomes
+  381  ls
+  382   datamash -s -g 1 count 1 mean min max pstdev  < BDGP6.Ensembl.81.gene.bed > gene_stats_per_chromosome.datamash
+  383   datamash -s -g 1 -H count 1 mean min max pstdev  < BDGP6.Ensembl.81.gene.bed > gene_stats_per_chromosome.datamash
+  384   datamash mean 5 min 5 max 5 pstdev 5 < BDGP6.Ensembl.81.gene.bed > gene_stats_per_chromosome.datamash
+  385  head gene_stats_per_chromosome.datamash 
+  386   datamash -s -g 1 count 1 mean 5 min 5 max 5 pstdev 5 < BDGP6.Ensembl.81.gene.bed > gene_stats_per_chromosome.datamash
+  387  head gene_stats_per_chromosome.datamash 
+  388  cp gene_stats_per_chromosome.datamash ../day1-lunch
+  389  cd ../day1-lunch
+  390  ls
+  391  git add gene_stats_per_chromosome.datamash 
+  392  git commit
+  393  git push
+  394  cd ../
+  395  cd genomes
+  396  ls
+  397  man sort
+  398  man sort
+  399  man sort
+  400  man uniq
+  401  man sort
+  402  man head
+  403  man head
+  404  sort BDGP6.Ensembl.81.gene.bed | uniq | head -
+  405  sort BDGP6.Ensembl.81.gene.bed | uniq | head -
+  406  sort BDGP6.Ensembl.81.gene.bed | uniq | head -n 10 > ../data1-lunch/longest_10_genes
+  407  sort BDGP6.Ensembl.81.gene.bed | uniq | head -n 10 > longest_10_genes
+  408  sort -r BDGP6.Ensembl.81.gene.bed | uniq | head -n 10 > shortest_10_genes
+  409  head longest_10_genes 
+  410  head shortest_10_genes 
+  411  man sort
+  412  sort -n -k 5 BDGP6.Ensembl.81.gene.bed | uniq
+  413  sort -n -k 5 BDGP6.Ensembl.81.gene.bed | uniq | head -n 10 > shortest_10_genes 
+  414  sort -n -k 5 BDGP6.Ensembl.81.gene.bed | uniq | tail -n 10 > longest_10_genes 
+  415  head shortest_10_genes 
+  416  head long
+  417  head longest_10_genes 
+  418  cp longest_10_genes ../day1-lunch
+  419  cp shortest_10_genes  ../day1-lunch
+  420  head ../day1-lunch/longest_10_genes 
+  421  cd ../day1-lunch/
+  422  ls
+  423  git add longest_10_genes 
+  424  git commit -m "Exercise 6: Longest and shortest Genes via Sort"
+  425  git push
+  426  git add shortest_10_genes 
+  427  git commit
+  428  git push
+  429  man datamash
+  430  cd ../genomes
+  431  man datamash
+  432  datamash -f BDGP6.Ensembl.81.gene.bed 
+  433  datamash -f < BDGP6.Ensembl.81.gene.bed 
+  434  datamash -f -s < BDGP6.Ensembl.81.gene.bed 
+  435* datamash -f -s min < BDGP6.Ensembl.81.gene.bed
+  436  datamash -f -s min 5 < BDGP6.Ensembl.81.gene.bed 
+  437  datamash -f -s max 5 < BDGP6.Ensembl.81.gene.bed 
+  438  man datamash
+  439  datamash -f -s max 5 < BDGP6.Ensembl.81.gene.bed | head
+  440  datamash -f -s < BDGP6.Ensembl.81.gene.bed | head
+  441  datamash -f  < BDGP6.Ensembl.81.gene.bed | head
+  442  datamash -f -s 5 < BDGP6.Ensembl.81.gene.bed | head
+  443  datamash -f -s  < BDGP6.Ensembl.81.gene.bed | head
+  444  datamash -f -s mean < BDGP6.Ensembl.81.gene.bed | head
+  445  man datamash
+  446  datamash -f -s min 5 < BDGP6.Ensembl.81.gene.bed q
+  447  history
+  448  datamash -f -s min 5 < BDGP6.Ensembl.81.gene.bed 
+  449  datamash -f -s -g 1 min 5 < BDGP6.Ensembl.81.gene.bed > shortest_gene_per_chromosome
+  450  less shortest_gene_per_chromosome
+  451  datamash -f -s -g 1 max 5 < BDGP6.Ensembl.81.gene.bed > longest_gene_per_chromosome
+  452  less longest_gene_per_chromosome
+  453  cp longest_gene_per_chromosome ../day1-lunch
+  454  cp shortest_gene_per_chromosome  ../day1-lunch
+  455  cd ../
+  456  ls
+  457  cd day1-lunch
+  458  ls
+  459  git add longest_gene_per_chromosome 
+  460  git add shortest_gene_per_chromosome 
+  461  git commit -m "Exercise 7: Longest and Shortest Genes per Chromosome"
+  462  git push
+  463  man grep
+  464  cd ../genomes
+  465  grep "transcript" BDGP6.Ensembl.81.gene.bed
+  466  grep "transcript" BDGP6.Ensembl.81.gene.bed > transcript.txt
+  467  wc -l transcript.txt 
+  468  grep "transcript" BDGP6.Ensembl.81.gene.bed > transcript.txt 
+  469  ls
+  470  grep "transcript" BDGP6.Ensembl.81.gtf > transcript.txt 
+  471  wc -l transcript.txt 
+  472  head BDGP6.Ensembl.81.gtf
+  473  sort -k 3 BDGP6.Ensembl.81.gtf | grep " transcript " > transcript2.txt
+  474  sort -k 3 BDGP6.Ensembl.81.gtf | grep "transcript" > transcript2.txt
+  475  q
+  476  √
+  477  q
+  478  history
+  479  man datamash
+  480  sort -k 3 BDGP6.Ensembl.81.gtf | grep "t*" > transcript2.txt
+  481  less transcript2.txt
+  482  less -s transcript2.txt
+  483* awk '$3 == "gene" {print $1 "\t" $4 "\t" $5}' BDGP6.Ensembl.81.gtf|
+  484  wc -l transcript.txt 
+  485  less -S transcript.txt
+  486  sort -k 3 transcript.txt > transcript2.txt
+  487  sort -k 3 BDGP6.Ensembl.81.gtf > transcript.txt
+  488  tail -34718 transcript.txt > genes_most_transcripts
+  489  cp genes_most_transcipts ../day1-lunch/
+  490  genes_most_transcripts
+  491  head genes_most_transcripts
+  492  cp genes_most_transcripts ../day1-lunch/
+  493  cd ../day1-lunch
+  494  ls
+  495  git add genes_most_transcripts
+  496  git commit -m "Exercise 8: Genes with most transcripts"
+  497  git push
+  498  man datamash
+  499  history
+  500  datamash -s -f -g 14 < genes_most_transcripts > test.txt
+  501  datamash -s -f -g 14 count 12 < genes_most_transcripts > test.txt
+  502  less -S test.txt
+  503  datamash -s -f -g 14 count 9 < genes_most_transcripts > test.txt
+  504  less -S genes_most_transcripts 
+  505  datamash -g 14 count 9 < genes_most_transcripts > test.txt
+  506  sort -k 3 transcript.txt > transq
+  507  sort -k 14 genes_most_transcripts 
+  508  sort -k 14 genes_most_transcripts > test
+  509  datamash -f count 14 < test 
+  510  datamash -f count  < test 
+  511  datamash -f count 1  < test 
+  512  cut -f 12 test
+  513  cd ../genomes
+  514  ls
+  515  cp genes_most_transcripts ../day1-lunch
+  516  history
+  517  less -S genes_most_transcripts 
+  518  man datamash
+  519  cd ..
+  520  cd /day1-lunch
+  521  ls
+  522  cd day1-lunch
+  523  ls
+  524  git add genes_most_transcripts_itemized
+  525  git commit -m "Exercise 9: Most transcripts per gene followed by list of transcripts (my partner and I were not abel to add the list of these transcripts)"
+  526  git push
+  527  history
+  528  cp genes_most_itemized ../genomes
+  529  ls
+  530  cp genes_most_transcripts_itemized ../genomes/
+  531  ls
+  532  cd ../genomes
+  533  ls
+  534  grep "transcript" BDGP6.Ensembl.81.gtf > transcriptgtf
+  535  less -S transcriptgtf
+  536  less -S transcriptgtf
+  537  man grep
+  538  man history
+  539  history > day1-lunch_cmdhistory
