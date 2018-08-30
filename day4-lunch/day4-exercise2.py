@@ -21,14 +21,16 @@ fpkm2 =df2.loc[:,"FPKM"]
 
 fit = np.polyfit(fpkm1, fpkm2, 1)
 p = np.poly1d(fit)
-xplog = np.logspace(-3, 6, 50)
+xplin = np.linspace(0,fpkm1.max())
 
 #for log axis
 fig, ax = plt.subplots()
 ax.scatter(fpkm1, fpkm2, alpha=0.1)
-plt.plot(xplog, p(xplog), '-', color='m')
+plt.plot(xplin, p(xplin), '-', color='m')
 plt.yscale("log")
 plt.xscale("log")
+plt.axis([.001, 10000,.001, 10000])
+axes = plt.gca()
 ax.set_title("FPKM2 vs. FPKM1 Scatter Plot")
 plt.ylabel("log(FPKM2)")
 plt.xlabel("log(FPKM1)")
