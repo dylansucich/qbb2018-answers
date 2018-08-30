@@ -19,9 +19,9 @@ df2 = pd.read_csv( sys.argv[2], sep="\t", index_col="t_name" )
 fpkm1 =df1.loc[:,"FPKM"]
 fpkm2 =df2.loc[:,"FPKM"]
 
-fit = np.polyfit(fpkm1, fpkm2,1)
+fit = np.polyfit(fpkm1, fpkm2, 1)
 p = np.poly1d(fit)
-xplog = np.logspace(-3, 4, 50)
+xplog = np.logspace(-3, 6, 50)
 
 #for log axis
 fig, ax = plt.subplots()
