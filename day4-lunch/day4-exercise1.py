@@ -30,7 +30,8 @@ for i in range(2, arg):
     # fpkm2 =pd.read_csv( sys.argv[2], sep="\t", index_col="t_name" ).loc[:,"FPKM"]
 
 
-fpkms_df = pd.DataFrame(samples)
+fpkms_df = pd.DataFrame(samples, columnns=["t_name", "FPKM"])
+print(fpkms_df)
 sum_fpkms = fpkms_df.sum(axis = 1)
 
 #meets_th = sum_fpkms.loc[]
@@ -38,7 +39,7 @@ sum_fpkms = fpkms_df.sum(axis = 1)
 meets_th = sum_fpkms > th
 
 results = sum_fpkms.index[meets_th == True]
-print(sum_fpkms, results)
+#print(sum_fpkms, results)
 #results = sum_fpkms.index[boolean=meets_th]
 
 #print(results)
