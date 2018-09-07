@@ -31,6 +31,6 @@ ax.set_title(gene_name)
 plt.xticks(rotation=90)
 plt.ylabel("mRNA abundance (FPKM)")
 plt.tight_layout()
-fig.savefig( "MeanValueofTransciptforOneGene.png" )
+fig.savefig( "".join(["day4-homework-gene_", sys.argv[1], ".png" ]))
 plt.close( fig )        
         
