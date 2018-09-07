@@ -37,12 +37,13 @@ mu = np.mean(results.resid)
 sigma = np.std(results.resid)
 
 fig, ax = plt.subplots()
-n, bins, patches = ax.hist(x = results.resid)
+n, bins, patches = ax.hist(x = results.resid, bins = 3000)
 y = scipy.stats.norm.pdf(bins, mu, sigma)
 ax.plot(bins, y)
 ax.set_ylabel = "Frequency"
 ax.set_xlabel = "Value"
 ax.set_title = "Histogram of Residuals"
+ax.set_xlim(-30,100)
 fig.tight_layout()
 fig.savefig("day5-exercise5_residuals.png")
 plt.close(fig)
