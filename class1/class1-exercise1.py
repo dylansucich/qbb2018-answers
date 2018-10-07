@@ -9,12 +9,16 @@ awk '{print ">"$1"\n"$4}' week1_query_short.out > seqs.fa
 
 transeq seqs.fa > seqs.pep   
 
+USAGE: ./class1-exercise1.py seqs.fa seqs.mafft
+
 """
 import sys
 import os
 import pandas as pd
 import fasta
 import itertools as it
+from statsmodels.stats import weightstats as stests
+import matplotlib.pyplot as plt
 
 
 query_file = open(sys.argv[1])
@@ -30,18 +34,18 @@ for (dna_id, dna), (aa_id, aa) in zip(unaligned_dna_seq, aligned_peptide_seq): #
       nuclist = []
       aalist = []
       j=0
-      aa_list.append(aa)
     
       for i in range(len(aa)):
           a = aa[i]
-          nt = dna[j:j+3]
+          aalist.append(a)
+          
+          nt = dna[j*3:(j*3)+3]
         
           if a == "-":
-              nt = "---"
-              nuclist.append(nt)
+              nuclist.append("---")
           else:
-              j+= 3
               nuclist.append(nt)
+              j +=1
         
       nt_list.append(nuclist)
       aa_list.append(aalist)
@@ -56,17 +60,51 @@ ds_count = 0
 dn_count = 0
 query = 0
 
-for codon, aa in zip(nt_list, aa_list):
-    for i in range(len(aa)):
-        a = aa[i]
-        nuc = dna[j:j+3]
-        for nuc == "---":
-            dN[i] += 1
-        elif no != "---":
-            dS[i] += 1
+query_dna = nt_list[0]
+query_aa = aa_list[0]
 
-print(nt_list)
+ds_count = [0] * len(query_aa)
+dn_count = [0] * len(query_aa)
+count = [0] * len(query_aa)
 
+
+
+for i in range(1, len(aa_list[1:])):
+	align = aa_list[i]
+	
+	for j in range(len(align)):
+		if align[j] != query_aa[j]:
+			dn_count[j] += 1
+		else:
+			ds_count[j] += 1
+            
+for codon_list, aa_list in zip(nt_list[1:], aa_list[1:]):
+     for i in range(0, len(codon_list)):
+             if codon_list[i] != query_dna[i]:
+                 count[i] += 1
+                 if aa_list[i] == query_aa[i]:
+                     ds_count[i] += 1
+                 else:
+                     dn_count[i] += 1
+     
+ratios = []
+for i in range(len(ds_count)):
+    ratio = (dn_count[i])/(ds_count[i] + 1)
+    ratios.append(ratio)
+
+ztest = stests.ztest(dn_count, ds_count)
+print(ztest)
+
+fig, ax = plt.subplots(figsize=(20, 8))
+ax.scatter(range(0, len(ratios)), ratios, s = 3)
+ax.set_xlabel("AA position")
+ax.set_ylabel("dN/dS ratio")
+ax.set_title("Ratio of Nonsynonymous and Synonymous Mutations at each Amino Acid Position")
+plt.tight_layout()
+fig.savefig("Nonsynonymous_to_Synonymous.png")
+plt.close(fig)
+
+     
 
     
     
